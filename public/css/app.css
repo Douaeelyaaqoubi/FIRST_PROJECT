@@ -57,10 +57,10 @@
 /* THIS STYEL YOUR DOUAE */
 
 /* HEAD */
-.body_about{
-    
-}
 
+body{
+    background-color: var(--background-color);
+}
 .header{
     display: flex;
     gap: 1vw;
@@ -92,8 +92,9 @@
 }
 
 /* CONTENT + IMAGE */
-/* .centent_image{
-    padding: 5% 8vw 18% 8vw;
+
+.centent_image{
+    padding: 5% 7vw 18% 7vw;
     display: flex;
     justify-content: space-between;
 }
@@ -102,16 +103,40 @@
     gap: 5%;
     flex-direction: column;
     justify-content: start;
+    width: 60vw;
+    margin-right: 2%;
 }
 
 .div_contant h1{
     font-family: Arial, sans-serif;
-} */
+    color: var(--text-light);
+}
 
+.div_contant samp{
+    font-family: cursive;
+    font-style: italic;
+}
+.spam{
+    color: #8f8f8f;
+}
 
-
-
-
+.div_contant ul{
+    padding-left: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.div_contant p{
+    color: var(--text-light);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    letter-spacing: 0,5px;
+}
 
 
 
