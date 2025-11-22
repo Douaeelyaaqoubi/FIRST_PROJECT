@@ -43,6 +43,58 @@
 
 /* ................................................ */
 /*  THIS STYEL YOUR GHITA */
+.header{
+    display: flex;
+    gap: 2vw;
+}
+
+.header p{
+    color: var(--text-light);
+}
+.header a{
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.head{
+    font-family: Arial, sans-serif;
+    padding: 3vw 0 3vw 15vw;
+    background:linear-gradient( to top, #f8f8f8, #dddcdcb5);
+}
+
+.head h1{
+    padding-top: 3vh;
+    color: var(--text-light);
+    font-size: 4vw;
+}
+.head a:hover{
+    color: #f6988a;
+}
+.nesciunt:hover{
+    background-color: var(--primary-color);
+}
+.Eosle:hover{
+background-color: var(--primary-color);
+}
+.Ledo:hover{
+background-color: var(--primary-color);
+}
+.asperiores:hover{
+background-color: var(--primary-color);
+}
+.velit:hover{
+background-color: var(--primary-color);
+}
+.dolori:hover{
+background-color: var(--primary-color);
+}
+.dolori, .velit, .asperiores, .Ledo, .Eosle, .nesciunt{
+    width: 370px;
+    height: 350px;
+}
+
+
 
 
 
