@@ -1,38 +1,185 @@
 :root {
-  /* Primary Colors */
-  --primary-color: #ff6b6b;   /* Buttons, highlights */
-  --primary-light: #ff9e9e;
-  --primary-dark: #d95a5a;
+    /* Primary Colors */
+    --primary-color: #ff6b6b;
+    /* Buttons, highlights */
+    --primary-light: #ff9e9e;
+    --primary-dark: #d95a5a;
 
-  /* Neutral Colors */
-  --text-color: #333333;
-  --text-light: #555555;
-  --text-muted: #777777;
+    /* Neutral Colors */
+    --text-color: #333333;
+    --text-light: #555555;
+    --text-muted: #777777;
 
-  --background-color: #ffffff;
-  --section-bg: #f8f8f8;
+    --background-color: #ffffff;
+    --section-bg: #f8f8f8;
 
-  /* Header & Navbar */
-  --navbar-bg: #ffffff;
-  --navbar-text: #333;
-  --navbar-hover: #ff6b6b;
+    /* Header & Navbar */
+    --navbar-bg: #ffffff;
+    --navbar-text: #333;
+    --navbar-hover: #ff6b6b;
 
-  /* Shadows */
-  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Shadows */
+    --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
 
-  /* Others */
-  --border-color: #e5e5e5;
+    /* Others */
+    --border-color: #e5e5e5;
 }
-*{ 
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
 
 /* ........................................ */
 /*  THIS STYEL YOUR  HOUSSEN */
+.Top_Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar-text);
+    height: 7vh;
+    padding-inline: 50px;
+}
+
+.social i {
+    color: var(--text-muted);
+}
+
+.Left_bar {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.email,
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+
+.Drop1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.nestedLinks {
+   padding: 10px;
+   row-gap: 10px;
+   position: absolute;
+   display: none; /* مخفي افتراضياً */
+   flex-direction: column;
+   width: 200px;
+   box-shadow: var(--shadow-medium);
+   right: 70px;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.Drop:hover .nestedLinks {
+   display: flex;
+   opacity: 1;
+}
+
+
+.nestLink {
+   display: none; 
+   flex-direction: column;
+   position: absolute;
+   /* left: 100%;  */
+   right: 220px;
+   top:  40px;
+   width: 180px;
+   background: #fff;
+   box-shadow: var(--shadow-medium);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   padding: 20px;
+}
+
+.Drop1:hover .nestLink {
+   display: flex;
+   opacity: 1;
+}
+
+
+.email a {
+    text-decoration: none;
+    color: var(--navbar-bg);
+}
+
+.email i,
+.phone i {
+    color: var(--primary-dark);
+}
+
+.email a:hover {
+    color: var(--navbar-hover);
+}
+
+.phone p {
+    color: var(--border-color);
+}
+
+.Nave_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Nave_bar {
+    height: 10vh;
+    padding-inline: 50px;
+    box-shadow: var(--shadow-soft);
+}
+
+.Logo {
+    position: relative;
+}
+
+.Logo h1 {
+    position: relative;
+    padding-left: 20px;
+}
+
+.Logo h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 35px;
+    background: var(--navbar-hover);
+
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-muted);
+}
 
 /*  THIS STYEL YOUR  HOUSSEN */
 /* ....................................... */
@@ -58,4 +205,3 @@
 
 /* THIS STYEL YOUR DOUAE */
 /* ................................................ */
-
