@@ -43,6 +43,7 @@
 
 /* ................................................ */
 /*  THIS STYEL YOUR GHITA */
+
 .header{
     display: flex;
     gap: 2vw;
@@ -90,8 +91,30 @@ background-color: var(--primary-color);
 background-color: var(--primary-color);
 }
 .dolori, .velit, .asperiores, .Ledo, .Eosle, .nesciunt{
-    width: 370px;
+    width: 470px;
     height: 350px;
+}
+.containeR i{
+    background-color: orangered;
+   font-size: 20px;
+   color: white;
+ width: 50px;
+ height: 50px;
+
+
+}
+.containeR {
+    padding-top: 80px;
+    padding-bottom: 110px;
+     margin: 0 auto; 
+}
+.pourcentage .progress{
+    color: #ff6b6b; 
+    font-weight: bold;
+}
+
+.SKILs{
+    padding-bottom: 50px;
 }
 
 
