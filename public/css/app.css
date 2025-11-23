@@ -5,6 +5,8 @@
         --dark: #3e3e3e;       
         --container-width: 1100px;
     /* Primary Colors */
+    --primary-color: #ff6b6b;
+    /* Buttons, highlights */
     --primary-color: #ff6b6b;   
     --primary-light: #ff9e9e;
     --primary-dark: #d95a5a;
@@ -55,8 +57,12 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--navbar-text);
-    height: 7vh;
+    height: 5vh;
     padding-inline: 50px;
+    margin-bottom: 20px;
+    z-index: 9999999;
+    position: relative;
+    padding-top: 50px;
 }
 
 .social i {
@@ -77,7 +83,18 @@ body {
     column-gap: 10px;
 
 }
-
+.email a {
+    text-decoration: none;
+    color: var(--background-color);
+    
+}
+.phone p {
+    color: var(--background-color);
+    padding-top: 1vw;
+}
+.phone i , .email i {
+   color: var(--navbar-hover);
+}
 .Drop1 {
     display: flex;
     align-items: center;
@@ -147,6 +164,44 @@ body {
     justify-content: space-between;
 }
 
+    /* padding-top: 2vh;
+    color: var(--border-color);
+} */
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Top_Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.Nave_bar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+
+}
+
+
 .links {
     column-gap: 20px;
     display: flex;
@@ -186,6 +241,214 @@ body {
     color: var(--text-muted);
 }
 
+/* this stye section_1 */
+#Image_1 {
+    background-image: url("../img/hero-carousel/hero-carousel-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+
+#Image_1 .carousel-caption,
+#Image_2 .carousel-caption,
+#Image_3 .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#Image_2 {
+    background-image: url("../img/hero-carousel/hero-carousel-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+
+}
+
+#Image_3 {
+    background-image: url("../img/hero-carousel/hero-carousel-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+
+}
+
+#Image_1::before,
+#Image_2::before,
+#Image_3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(157, 151, 151, 0.8);
+    z-index: -1;
+}
+
+#Image_1 span {
+    position: relative;
+    color: var(--primary-dark);
+    opacity: 1;
+    z-index: 999;
+}
+
+.Btn_section1 {
+    background-color: var(--primary-color);
+    color: var(--border-color);
+    border: none;
+    padding: 6px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.animate-slide-down {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.animate-slide-uP {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideDown 0.7s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+}
+
+#carouselExampleCaptions {
+    margin-top: 15vh;
+}
+
+/* style section  2 */
+
+.All_Card {
+
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+
+}
+
+.Card {
+
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: var(--shadow-medium);
+    
+
+}
+.Svg_tit{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  
+    
+}
+.Svg_tit svg{
+    width: 40px;
+    height: 40px;
+    color:var(--navbar-hover);
+}
+.Section_2{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card {
+    position: relative;
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    inset: 0;               
+    background-color: var(--primary-color);
+    height: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: -1;  
+}
+
+.Card h3 , p {
+    color: black ;
+}
+.Card:hover::before   {
+    opacity: 1;
+    height: 100%;
+}
+
+.Card:hover p , h3 , svg {
+    color:var(--section-bg);
+}
+.Card:hover h3 {
+    color: var(--section-bg);
+}
+.Card:hover svg {
+    color: var(--background-color);
+}
+
+
+/* style section 3 */
+
+
+
+
+
+
+
+
+
+
+
 /*  THIS STYEL YOUR  HOUSSEN */
 /* ....................................... */
 
@@ -196,8 +459,404 @@ body {
 
 /* ................................................ */
 /*  THIS STYEL YOUR GHITA */
-/* THIS STYEL YOUR GHITA */
-/* ................................................... */
+/* HEAD */
+.head{
+    font-family: Arial, sans-serif;
+    padding: 2vh 0 1vh 7vw;
+    background:linear-gradient( to top, #f8f8f8bc, #edebeb);
+    border-top: solid 1px #8f8f8f59;
+}
+
+.header{
+    display: flex;
+    gap: 1vw;
+}
+
+.header p{
+    color: #555555;
+}
+.header a{
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.header span a{
+    color: var(--primary-dark);
+}
+
+.head h1{
+    color: var(--text-light);
+    font-size: 2vw;
+    font-weight: bolder;
+}
+.head a:hover{
+    color: var(--primary-dark);
+}
+
+
+
+
+.nesciunt:hover{
+    background-color: orangered;
+
+}
+.Eosle:hover{
+background-color: var(--primary-color);
+}
+.Ledo:hover{
+background-color: var(--primary-color);
+}
+.asperiores:hover{
+background-color: var(--primary-color);
+}
+.velit:hover{
+background-color: var(--primary-color);
+}
+.dolori:hover{
+background-color: var(--primary-color);
+}
+.dolori, .velit, .asperiores, .Ledo, .Eosle, .nesciunt{
+    width: 470px;
+    height: 350px;
+}
+
+.containeR {
+    padding-top: 80px;
+    padding-bottom: 110px;
+     margin: 0 auto; 
+   
+}
+.pourcentage .progress{
+    color: #ff6b6b; 
+    font-weight: bold;
+}
+
+.SKILs{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Services1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.table1, .table2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+#animation_down{
+
+    transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1s ease-in-out forwards;
+
+}
+@keyframes animationdown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#animation_esole{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1.3s ease-in-out forwards;
+}
+@keyframes animation_esole  {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#ledo_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1.5s ease-in-out forwards;
+}
+@keyframes ledo_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#asperiores_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  2.5s ease-in-out forwards;
+}
+@keyframes asperiores_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#velit_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  2.8s ease-in-out forwards;
+}
+@keyframes velit_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#dolori_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  3.1s ease-in-out forwards;
+}
+@keyframes dolori_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* animation skils */
+
+
+
+
+
+
+
+.pourcentage img {
+    width:90vh;
+    height: 60vh;
+}
+.pourcentage{
+    gap: 20px;
+    padding-inline:100px;
+}
+.pourcentage .progress {
+    height: 12px;
+    border-radius: 0;
+   
+    margin-bottom: 15px;
+}
+
+.pourcentage p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+.pourcentage h2, .SKILs h2{
+    color: var(--text-light);
+}
+.SKILs h2 {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 20px;
+}
+.SKILs {
+    position: relative;
+}
+.SKILs p {
+    padding-top: 20px;
+}
+.SKILs h2::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+.containeR i {
+    background-color: var(--primary-color);
+    font-size: 24px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 3;
+    
+}
+.containeR i::after {
+    content: "";
+    position: absolute;
+    top: -8px;     
+    left: 8px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 107, 107, 0.35); 
+    border-radius: 8px;
+      z-index: -3;
+}
+
+
+.nesciunt:hover i,
+.Eosle:hover i,
+.Ledo:hover i,
+.asperiores:hover i,
+.velit:hover i,
+.dolori:hover i {
+    background-color: white !important; 
+
+    color: var(--primary-color) !important;
+   
+
+
+}
+
+/*  GHITA  contact desktop   */
+.info{
+    
+    display: flex;
+
+
+    gap: 50px;
+    padding: 50px 0;
+    padding-inline: 140px;
+}
+.Adresse{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Call_Us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Email{
+    
+    
+    width: 15%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Email, .Call_Us, .Adresse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.Adresse i, .Call_Us i, .Email i{
+    font-size: 20px;
+    border: 2px dotted orangered;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+.part2{
+    display: flex;
+    padding-inline: 140px;
+}
+.send-message{
+    width: 40%;
+    height: 50vh;
+    background-color: #cdc9c9;
+    margin-top: 50px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS STYEL YOUR GHITA media  */
+@media (max-width: 425px) {
+    .table1, .table2{
+        flex-direction: column;
+      
+      
+        row-gap: 50px;
+    }
+    
+    #animation_down, #animation_esole, #ledo_animation, #asperiores_animation, #velit_animation, #dolori_animation{
+        animation: none;
+        transform: translateY(0);
+        opacity: 1;
+       width: 100%;
+       height: 400px;
+    }
+    .pourcentage {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 20px;
+    }
+    .head{
+        display: none;
+    }
+    .pourcentage img {
+        width: 100%;
+        height: auto;
+    }
+    .SKILs h2{
+        font-size: 24px;
+
+    }
+    .SKILs p{
+        text-align: center;
+    }
+
+}
+/* GHITA contact   mobile */
+
+
+
+
+@media (max-width: 768px) {
+    .info{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .Adresse, .Call_Us, .Email{
+        width: 80%;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .part2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .send-message{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
 
 
 
