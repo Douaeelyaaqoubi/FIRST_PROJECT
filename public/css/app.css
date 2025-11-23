@@ -64,7 +64,9 @@ body {
     position: relative;
     padding-top: 50px;
 }
-
+.links a:hover {
+    color: var(--primary-color);
+}
 .social i {
     color: var(--text-muted);
 }
@@ -184,6 +186,7 @@ body {
     color: #fff;
     padding: 5px 20px;
     z-index: 1000;
+    height: 6vh;
 }
 
 .Nave_bar {
