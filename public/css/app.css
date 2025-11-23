@@ -409,6 +409,10 @@ body {
 .Card {
     position: relative;
 }
+body{
+    overflow-x: hidden;
+}
+
 
 .Card::before {
     content: "";
@@ -874,7 +878,7 @@ background-color: var(--primary-color);
 /* HEAD */
 .head{
     font-family: Arial, sans-serif;
-    padding: 2vh 0 1vh 7vw;
+    padding: 19vh 0 1vh 7vw;
     background:linear-gradient( to top, #f8f8f8bc, #edebeb);
     border-top: solid 1px #8f8f8f59;
 }
@@ -937,11 +941,12 @@ background-color: var(--primary-color);
 
 .div_contant ul{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
     color: var(--text-light);
     letter-spacing: 1px;
     padding-left: 0;
     list-style: none;
+    font-size: large;
+    font-size: 1.2vw;
 }
 .div_contant p{
     color: var(--text-light);
@@ -970,8 +975,6 @@ background-color: var(--primary-color);
     gap: 18px;
     width: 20%;
     }
-
-    
 
     .number {
     font-size: 44px;
@@ -1004,12 +1007,6 @@ background-color: var(--primary-color);
     .stats-wrap div svg{
         color: #e96b56;
     }
-
-
-
-
-
-
 
 
     /* CLIENTT */
