@@ -43,37 +43,47 @@
 
 /* ................................................ */
 /*  THIS STYEL YOUR GHITA */
+/* HEAD */
+.head{
+    font-family: Arial, sans-serif;
+    padding: 2vh 0 1vh 7vw;
+    background:linear-gradient( to top, #f8f8f8bc, #edebeb);
+    border-top: solid 1px #8f8f8f59;
+}
 
 .header{
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .header p{
-    color: var(--text-light);
+    color: #555555;
 }
 .header a{
     color: var(--text-light);
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
-.head{
-    font-family: Arial, sans-serif;
-    padding: 3vw 0 3vw 15vw;
-    background:linear-gradient( to top, #f8f8f8, #dddcdcb5);
+.header span a{
+    color: var(--primary-dark);
 }
 
 .head h1{
-    padding-top: 3vh;
     color: var(--text-light);
-    font-size: 4vw;
+    font-size: 2vw;
+    font-weight: bolder;
 }
 .head a:hover{
-    color: #f6988a;
+    color: var(--primary-dark);
 }
+
+
+
+
 .nesciunt:hover{
-    background-color: var(--primary-color);
+    background-color: orangered;
+
 }
 .Eosle:hover{
 background-color: var(--primary-color);
@@ -94,19 +104,12 @@ background-color: var(--primary-color);
     width: 470px;
     height: 350px;
 }
-.containeR i{
-    background-color: orangered;
-   font-size: 20px;
-   color: white;
- width: 50px;
- height: 50px;
 
-
-}
 .containeR {
     padding-top: 80px;
     padding-bottom: 110px;
      margin: 0 auto; 
+   
 }
 .pourcentage .progress{
     color: #ff6b6b; 
@@ -115,7 +118,199 @@ background-color: var(--primary-color);
 
 .SKILs{
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.Services1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.table1, .table2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+#animation_down{
+
+    transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1s ease-in-out forwards;
+
+}
+@keyframes animationdown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#animation_esole{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1.3s ease-in-out forwards;
+}
+@keyframes animation_esole  {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#ledo_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  1.5s ease-in-out forwards;
+}
+@keyframes ledo_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#asperiores_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  2.5s ease-in-out forwards;
+}
+@keyframes asperiores_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#velit_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  2.8s ease-in-out forwards;
+}
+@keyframes velit_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#dolori_animation{
+     transform: translateY(50px);
+    opacity: 0;
+    animation: animationdown  3.1s ease-in-out forwards;
+}
+@keyframes dolori_animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* animation skils */
+
+
+
+
+
+
+
+.pourcentage img {
+    width:90vh;
+    height: 60vh;
+}
+.pourcentage{
+    gap: 20px;
+    padding-inline:100px;
+}
+.pourcentage .progress {
+    height: 12px;
+    border-radius: 0;
+   
+    margin-bottom: 15px;
+}
+
+.pourcentage p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+.pourcentage h2, .SKILs h2{
+    color: var(--text-light);
+}
+.SKILs h2 {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 20px;
+}
+.SKILs {
+    position: relative;
+}
+.SKILs p {
+    padding-top: 20px;
+}
+.SKILs h2::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+.containeR i {
+    background-color: var(--primary-color);
+    font-size: 24px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 3;
+    
+}
+.containeR i::after {
+    content: "";
+    position: absolute;
+    top: -8px;     
+    left: 8px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 107, 107, 0.35); 
+    border-radius: 8px;
+      z-index: -3;
+}
+
+
+.nesciunt:hover i,
+.Eosle:hover i,
+.Ledo:hover i,
+.asperiores:hover i,
+.velit:hover i,
+.dolori:hover i {
+    background-color: white !important; 
+
+    color: var(--primary-color) !important;
+   
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
