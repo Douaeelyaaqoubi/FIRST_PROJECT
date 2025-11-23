@@ -82,7 +82,7 @@ body {
    padding: 10px;
    row-gap: 10px;
    position: absolute;
-   display: none; /* مخفي افتراضياً */
+   display: none; 
    flex-direction: column;
    width: 200px;
    box-shadow: var(--shadow-medium);
