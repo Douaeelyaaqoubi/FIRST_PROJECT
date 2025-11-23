@@ -1,7 +1,8 @@
 
 :root {
     /* Primary Colors */
-    --primary-color: #ff6b6b;   /* Buttons, highlights */
+    --primary-color: #ff6b6b;
+    /* Buttons, highlights */
     --primary-light: #ff9e9e;
     --primary-dark: #d95a5a;
 
@@ -49,8 +50,12 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--navbar-text);
-    height: 7vh;
+    height: 5vh;
     padding-inline: 50px;
+    margin-bottom: 20px;
+    z-index: 9999999;
+    position: relative;
+    padding-top: 50px;
 }
 
 .social i {
@@ -71,7 +76,18 @@ body {
     column-gap: 10px;
 
 }
-
+.email a {
+    text-decoration: none;
+    color: var(--background-color);
+    
+}
+.phone p {
+    color: var(--background-color);
+    padding-top: 1vw;
+}
+.phone i , .email i {
+   color: var(--navbar-hover);
+}
 .Drop1 {
     display: flex;
     align-items: center;
@@ -89,6 +105,7 @@ body {
    right: 70px;
    opacity: 0;
    transition: opacity 0.3s ease;
+   background-color: var(--background-color);
 }
 
 .Drop:hover .nestedLinks {
@@ -115,6 +132,51 @@ body {
 .Drop1:hover .nestLink {
    display: flex;
    opacity: 1;
+
+
+.nestedLinks {
+    padding: 10px;
+    row-gap: 10px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: var(--shadow-medium);
+    right: 70px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 99999;
+    background-color: var(--background-color);
+}
+
+
+.Drop:hover .nestedLinks {
+    display: flex;
+    opacity: 1;
+
+}
+
+
+
+
+.nestLink {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 220px;
+    top: 40px;
+    width: 180px;
+    background: #fff;
+    box-shadow: var(--shadow-medium);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    z-index: 999;
+}
+
+.Drop1:hover .nestLink {
+    display: flex;
+    opacity: 1;
 }
 
 
@@ -141,6 +203,45 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+    padding-top: 2vh;
+    color: var(--border-color);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Top_Nav {
+    position: fixed;
+    top: 0;
+ 
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.Nave_bar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+
+}
+
 
 .links {
     column-gap: 20px;
@@ -180,6 +281,214 @@ body {
     text-decoration: none;
     color: var(--text-muted);
 }
+
+/* this stye section_1 */
+#Image_1 {
+    background-image: url("../img/hero-carousel/hero-carousel-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+
+#Image_1 .carousel-caption,
+#Image_2 .carousel-caption,
+#Image_3 .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#Image_2 {
+    background-image: url("../img/hero-carousel/hero-carousel-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+
+}
+
+#Image_3 {
+    background-image: url("../img/hero-carousel/hero-carousel-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+
+}
+
+#Image_1::before,
+#Image_2::before,
+#Image_3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(157, 151, 151, 0.8);
+    z-index: -1;
+}
+
+#Image_1 span {
+    position: relative;
+    color: var(--primary-dark);
+    opacity: 1;
+    z-index: 999;
+}
+
+.Btn_section1 {
+    background-color: var(--primary-color);
+    color: var(--border-color);
+    border: none;
+    padding: 6px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.animate-slide-down {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.animate-slide-uP {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideDown 0.7s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+#carouselExampleCaptions {
+    margin-top: 15vh;
+}
+
+/* style section  2 */
+
+.All_Card {
+
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+
+}
+
+.Card {
+
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: var(--shadow-medium);
+    
+
+}
+.Svg_tit{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  
+    
+}
+.Svg_tit svg{
+    width: 40px;
+    height: 40px;
+    color:var(--navbar-hover);
+}
+.Section_2{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card {
+    position: relative;
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    inset: 0;               
+    background-color: var(--primary-color);
+    height: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: -1;  
+}
+
+.Card h3 , p {
+    color: black ;
+}
+.Card:hover::before   {
+    opacity: 1;
+    height: 100%;
+}
+
+.Card:hover p , h3 , svg {
+    color:var(--section-bg);
+}
+.Card:hover h3 {
+    color: var(--section-bg);
+}
+.Card:hover svg {
+    color: var(--background-color);
+}
+
+
+/* style section 3 */
+
+
+
+
+
+
+
+
+
+
 
 /*  THIS STYEL YOUR  HOUSSEN */
 /* ....................................... */
