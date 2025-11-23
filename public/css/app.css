@@ -303,6 +303,67 @@ background-color: var(--primary-color);
 
 }
 
+/*  GHITA  contact desktop   */
+.info{
+    
+    display: flex;
+
+
+    gap: 50px;
+    padding: 50px 0;
+    padding-inline: 140px;
+}
+.Adresse{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Call_Us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Email{
+    
+    
+    width: 15%;
+    height: 20vh;
+    background-color: #cdc9c9;
+}
+.Email, .Call_Us, .Adresse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.Adresse i, .Call_Us i, .Email i{
+    font-size: 20px;
+    border: 2px dotted orangered;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+.part2{
+    display: flex;
+    padding-inline: 140px;
+}
+.send-message{
+    width: 40%;
+    height: 50vh;
+    background-color: #cdc9c9;
+    margin-top: 50px;
+   
+}
 
 
 
@@ -315,9 +376,71 @@ background-color: var(--primary-color);
 
 
 
+/* THIS STYEL YOUR GHITA media  */
+@media (max-width: 425px) {
+    .table1, .table2{
+        flex-direction: column;
+      
+      
+        row-gap: 50px;
+    }
+    
+    #animation_down, #animation_esole, #ledo_animation, #asperiores_animation, #velit_animation, #dolori_animation{
+        animation: none;
+        transform: translateY(0);
+        opacity: 1;
+       width: 100%;
+       height: 400px;
+    }
+    .pourcentage {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 20px;
+    }
+    .head{
+        display: none;
+    }
+    .pourcentage img {
+        width: 100%;
+        height: auto;
+    }
+    .SKILs h2{
+        font-size: 24px;
 
-/* THIS STYEL YOUR GHITA */
-/* ................................................... */
+    }
+    .SKILs p{
+        text-align: center;
+    }
+
+}
+/* GHITA contact   mobile */
+
+
+
+
+@media (max-width: 768px) {
+    .info{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .Adresse, .Call_Us, .Email{
+        width: 80%;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .part2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .send-message{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
 
 
 
