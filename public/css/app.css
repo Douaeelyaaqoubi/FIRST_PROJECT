@@ -12,7 +12,7 @@
 
     /* Neutral Colors */
     --text-color: #333333;
-    --text-light: #555555; 
+    --text-light: #555555;
     --text-muted: #777777;
 
     --background-color: #ffffff;
@@ -131,6 +131,9 @@ body {
     opacity: 1;
 }
 
+.hidden {
+    display: none;
+}
 
 .nestLink {
     display: none;
@@ -607,6 +610,162 @@ body {
 }
 
 /* footer */
+
+
+/* media  */
+@media(max-width:420px) {
+    .right_bar {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .phone p {
+        padding-top: 1.3vh;
+        font-size: 0.8rem;
+    }
+
+    .email a {
+        font-size: 0.8rem;
+    }
+
+    .email {
+        padding-left: 30px;
+    }
+
+    .Top_Nav {
+        padding-bottom: 20px;
+    }
+
+    .Nave_bar {
+
+        position: fixed;
+        padding-left: 10px;
+    }
+
+    #MENU {
+        display: none;
+    }
+
+    .links {
+        display: block;
+        position: absolute;
+        top: 130%;
+        background-color: var(--background-color);
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+        height: 75vh;
+        width: 30vh;
+        row-gap: 20px;
+        left: 7vh;
+        padding-left: 10px;
+        border-radius: 7px;
+        display: none;
+        justify-content: start;
+    }
+
+    .links a:hover {
+        color: var(--accent);
+    }
+
+    #MENU:checked~.links {
+        display: flex;
+    }
+
+    .Section_2 {
+        margin-top: 20px;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .All_Card {
+        row-gap: 10px;
+        flex-direction: column;
+    }
+
+    .Card {
+        width: 40vh;
+    }
+
+    .centent_image {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: unset;
+    }
+
+    .div_contant {
+        width: unset;
+    }
+
+    .centent_image {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .centent_image h1 {
+        font-size: 100px;
+
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .div_contant {
+        width: 100%;
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .div_contant h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .div_contant span p,
+    .div_contant ul,
+    .div_contant p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .div_contant ul {
+        padding-left: 0;
+    }
+
+    .div_contant ul li {
+        margin-bottom: 10px;
+    }
+
+    .centent_image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .carousel-caption {
+        display: block !important;
+        bottom: 20px;
+        top: auto;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        z-index: 10;
+    }
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -1090,6 +1249,7 @@ body {
         height: auto;
         margin-top: 20px;
     }
+
 }
 
 
