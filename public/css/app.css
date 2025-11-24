@@ -1517,9 +1517,213 @@ body {
 }
 
 
+        /* MEDIA */
+        /* Existing CSS remains the same, adding mobile responsiveness below */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* TOP_NAV */
+    .Top_Nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Left_bar, .right_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social {
+        gap: 15px;
+    }
+
+    /* NAVE_BAR */
+    .Nave_bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Logo h1 {
+        font-size: 24px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Drop {
+        position: relative;
+    }
+
+    .nestedLinks, .nestLink {
+        display: none; /* Hide dropdowns on mobile for simplicity, or implement toggle */
+    }
+
+    /* HEAD */
+    .head {
+        padding: 10vh 5vw 1vh 5vw;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .head h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* CONTENT + IMAGE */
+    .centent_image {
+        flex-direction: column;
+        padding: 5% 5vw 50px 5vw;
+        align-items: center;
+    }
+
+    .div_contant {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .div_contant h1 {
+        font-size: 24px;
+    }
+
+    .div_contant span p, .div_contant ul, .div_contant p {
+        font-size: 16px;
+    }
+
+    .centent_image img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* SECTION (Stats) */
+    .stats-wrap {
+        flex-direction: column;
+        gap: 20px;
+        padding-inline: 5vw;
+        align-items: center;
+    }
+
+    .stat {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 36px;
+    }
+
+    .title, .subtitle {
+        font-size: 14px;
+    }
+
+    /* CLIENTT */
+    .clientt {
+        padding-top: 5vh;
+    }
+
+    .clientt h1 {
+        font-size: 24px;
+    }
+
+    .clientt p {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    /* MARKE (Clients Carousel) */
+    .clients-section {
+        padding: 40px 20px;
+    }
+
+    .carousel-track {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .client-logo {
+        min-width: calc(100% / 3); 
+    }
+
+    .client-logo img {
+        max-width: 100px;
+    }
+
+    .carousel-indicators {
+        margin-top: 20px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-section {
+        padding: 50px 20px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-info h4 {
+        font-size: 16px;
+    }
+
+    .testimonial-info span {
+        font-size: 12px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .testimonial-card p svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+    #About_animation {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: animationdown 0.7s ease-in-out forwards;
+    }
+
+    @keyframes animationdown {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
 
 
-
+/* @media (max-width: 768px) {
+    
+} */
 
 
 
