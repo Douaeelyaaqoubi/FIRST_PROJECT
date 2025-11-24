@@ -1686,16 +1686,21 @@ body {
 @media (max-width: 768px) {
     /* TOP_NAV */
     .Top_Nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 8px;
+        padding-bottom: 100px;
+        align-items: center;
+    }
+    .phone p{
+        padding: 0;
+        margin: 0;
     }
 
     .Left_bar, .right_bar {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .social {
@@ -1704,9 +1709,9 @@ body {
 
     /* NAVE_BAR */
     .Nave_bar {
-        flex-direction: column;
-        align-items: center;
+        align-items: cente;
         padding: 10px;
+        margin-top: 20px;
     }
 
     .Logo h1 {
@@ -1715,8 +1720,9 @@ body {
 
     .links {
         flex-direction: column;
-        gap: 10px;
+        /* justify-content: space-between; */
         text-align: center;
+        display: none;
     }
 
     .Drop {
@@ -1729,19 +1735,31 @@ body {
 
     /* HEAD */
     .head {
-        padding: 10vh 5vw 1vh 5vw;
+        padding: 23vh 5vw 1vh 5vw;
     }
 
     .header {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .head h1 {
         font-size: 24px;
         text-align: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
-
+    .p{
+            display: none;
+    }
+    .head .header span a{
+        display: flex;
+        align-items: end;
+    }
     /* CONTENT + IMAGE */
     .centent_image {
         flex-direction: column;
