@@ -1286,6 +1286,8 @@ background-color: var(--primary-color);
         /* Existing CSS remains the same, adding mobile responsiveness below */
 
 /* Mobile Styles */
+
+
 @media (max-width: 768px) {
     /* TOP_NAV */
     .Top_Nav {
