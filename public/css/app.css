@@ -1085,11 +1085,14 @@ body {
 }
 
 /*  GHITA  contact desktop   */
+
+.bdy{
+    background-color: #f8f8f87d;
+}
+
+
 .info {
-
     display: flex;
-
-
     gap: 50px;
     padding: 50px 0;
     padding-inline: 140px;
@@ -1113,35 +1116,70 @@ body {
     background-color: #cdc9c9;
 }
 
-.Email {
-
-
-    width: 15%;
-    height: 20vh;
-    background-color: #cdc9c9;
-}
-
-.Email,
-.Call_Us,
-.Adresse {
+.bg_emilEmail {
+    width: 50%;
+    height: max-content;
+    background-color: #ffffff ;
+    color: #545454;
+    padding: 2% 8%;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
+.bg_emilEmail p{
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+.bg_emil h2{
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+.bg_emil p{
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
 
-.Adresse i,
-.Call_Us i,
-.Email i {
-    font-size: 20px;
-    border: 2px dotted orangered;
+
+.bg_emilEmail i{
+    color:#e96b56;
+    border: 2px solid var(--navbar-hover);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: orangered;
+    justify-content: center;
+}
+
+
+
+.bg_emil{
+    width: 30%;
+    height: max-content;
+    background-color: #ffffff ;
+    color: #545454;
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.bg_emil i{
+    color:#e96b56;
+    border: 2px solid var(--navbar-hover);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .part2 {
@@ -1217,6 +1255,19 @@ body {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* GHITA contact   mobile */
 
@@ -1547,7 +1598,7 @@ body {
 }
 
 .testimonial-card {
-    background: #fff;
+    background: #fffffff4;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
